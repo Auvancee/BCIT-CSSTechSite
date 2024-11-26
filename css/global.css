@@ -54,7 +54,10 @@ nav a {
     color: #54fffc;
 }
 
-
+footer {
+    padding: 20px 20px;
+    background-color: #03a8ab;
+}
 
 
 
@@ -214,6 +217,7 @@ nav a {
         display: none;
     }
 
+    
 
 
 

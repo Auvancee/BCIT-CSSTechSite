@@ -1,1 +1,159 @@
 /* Your Custom Code */
+body{
+    color: rgb(255,255,255);
+}
+
+main{
+    height: auto;
+    margin-left: 1rem;
+}
+
+
+/* Key Properties */
+.ease, .linear, .ease-in, .ease-out, .ease-in-out{
+  width: 6.5rem;
+  height: 6.5rem;
+  background-color: red;
+  margin-top: 1rem;
+}
+
+.ease{
+  transition: width 2s ease;
+}
+
+.linear{
+  transition: width 2s linear;
+}
+
+.ease-in{
+  transition: width 2s ease-in;
+}
+.ease-out{
+  transition: width 2s ease-out;
+}
+
+.ease-in-out{
+  transition: width 2s ease-in-out;
+}
+
+.timing-container{
+  width: 25rem;
+}
+.timing-container:hover .ease,
+.timing-container:hover .linear,
+.timing-container:hover .ease-in,
+.timing-container:hover .ease-out,
+.timing-container:hover .ease-in-out{
+  /* display: flex;
+  justify-content: space-evenly; */
+  width: 20rem; 
+}
+
+.box-hover-color,
+.box-change-padding,
+.opacity-box {
+    width: 6.5rem;
+    height: 6.5rem;
+    /* margin: 0 auto; */
+    background-color: #3498db;
+    text-align: center;
+    line-height: 6.5rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+/* example 1 */
+.box-hover-color{
+    transition:
+    width 2s,
+    height 2s,
+    background-color 2s,
+    rotate 2s;
+}
+
+.box-hover-color:hover {
+    width: 12rem;
+    height: 12rem;
+    rotate: 180deg;
+    background-color: #e74c3c;
+}
+
+/* example 2 */
+.box-change-padding {
+    background-color: #1abc9c;
+    transition: padding 0.5s ease; 
+  }
+  
+  .box-change-padding:hover {
+    padding: 1.25rem;
+  }
+  
+/* Transition */
+/* html {
+    height: 100vh;
+} */
+  
+/* example 3 */
+.show {
+    font-size: 1.6rem;
+    padding: 20px;
+    border: 3px solid red;
+    border-radius: 20px;
+    width: 480px;
+    margin-top: 1rem;
+    display: none;
+    opacity: 0;
+    transition:
+    opacity 5s,
+    display 1s allow-discrete;
+}
+  
+.showing {
+    opacity: 1;
+    display: block;
+  }
+  
+@starting-style {
+    .showing {
+      opacity: 0;
+    }
+}
+
+#btn{
+  width: 6.5rem;
+  height: auto;
+  padding: 1rem;
+}
+
+
+
+/* example 4 */
+.ball {
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    background: #c00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1s;
+}
+
+/* more resources */
+a {
+    flex: 1;
+    background-color: #3498db;
+    color: #fff;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+  
+  a:hover,
+  a:focus {
+    background-color: #e74c3c;
+    color: #ffffff;
+  }

@@ -61,8 +61,70 @@
                 <!-- [2] Transition Content (Your Content)  -->
                 <main>
                     
+                    <h1>CSS Transition</h1>
+                    <section class="key-definition">
 
+                    <article class="definition">
+                        <h2>What is a CSS Transition?</h2>
+                        <p><strong>Definition:</strong> Enables smooth changes between different states of CSS properties over a defined duration.</p>
+                        <p><strong>Shorthand property:</strong> Combines multiple transition-related properties into a single declaration.</p>
+                    </article>
 
+                        <article class="key-properties">
+                            <h2>Key Transition Properties</h2>
+                            <p><strong>transition-property:</strong> Specifies the CSS property to transition (e.g., width, color, opacity).</p>
+                            <p><strong>transition-duration:</strong> Sets how long the transition lasts (in seconds or milliseconds).</p>
+                            <p><strong>transition-delay:</strong> Delays the start of the transition.</li>
+                                <p><strong>transition-behavior:</strong> pecifies whether transition will be started for properties whose animation behavior is discrete, keyword values are allow-discrete, normal.</p>
+                            <p><strong>transition-timing-function:</strong> Defines the speed curve of the transition:</p>
+                            <ol>
+                                <li>ease: Slow start, faster middle, slow end (default).</li>
+                                <li>linear: Constant speed throughout. (not recommend)</li>
+                                <li>ease-in: Slow start.</li>
+                                <li>ease-out: Slow end.</li>
+                                <li>ease-in-out: Slow start and end.</li>
+                            </ol>
+
+                            <div class="timing-container">
+                                <div class="ease">Ease</div>
+                                <div class="linear">Linear</div>
+                                <div class="ease-in">Ease In</div>
+                                <div class="ease-out">Ease Out</div>
+                                <div class="ease-in-out">Ease In Out</div>
+                            </div>
+
+                        </article>
+                    </section>
+                    <section class="examples">
+                        <article class="ex-1">
+                            <h2>Change color, width and rotation</h2>
+                            <div class="box-hover-color">Hover me</div>
+                        </article>
+                        <article class="ex-2">
+                            <h2>Change padding</h2>
+                            <div class="box-change-padding">Hover me</div>
+                        </article>
+                        <article class="ex-3">
+                            <h2>
+                                <code>&lt;div&gt;</code> between hidden and showing.
+                            </h2>
+                            <button id="btn">Click Me</button>
+                            <div class="show" id="show">
+                                This is a <code>&lt;div&gt;</code> element that transitions between
+                                <code>display: none; opacity: 0</code> and
+                                <code>display: block; opacity: 1</code>. Neat, huh?
+                            </div>
+                        </article>
+                        <!-- <article class="ex-4">
+                            <p>Click anywhere to move the ball</p>
+                            <div id="foo" class="ball"></div>
+                        </article> -->
+                    </section>
+                    <article>
+                        <h3>Reference</h3>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions">MDN web docs</a>
+                        <a href="https://www.w3schools.com/css/css3_transitions.asp">W3 schools</a>
+                    </article>
 
                 </main>
 
@@ -73,5 +135,6 @@
             </footer>
 
         </div>
+        <script src="transition.js"></script>
     </body>
 </html>

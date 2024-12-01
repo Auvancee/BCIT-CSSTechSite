@@ -3,6 +3,10 @@ body {
     color: white;
 }
 
+main {
+    height: auto;
+}
+
 
 /* code demo for css animation intro*/
 .box {
@@ -17,3 +21,62 @@ body {
     50% { background-color: yellow; }
     100% { background-color: coral; }
   }
+
+  /* code demo for css animation keyframes*/
+  .spin {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+   /* code demo for css animation advanced */
+  .bounce {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    animation: bounce 1s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+  }
+
+  /* code demo for css animation advanced */
+  button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+
+button:hover {
+    animation: none; /* Stop the pulsing animation */
+    background-color: #FF5722; /* Change color to orange */
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

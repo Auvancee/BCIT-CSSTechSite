@@ -1,1 +1,80 @@
 /* Don't Touch!  */
+
+
+main{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 1rem; */
+}
+
+h1 {
+    color: rgb(255,255,255);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    color: rgb(255,255,255);
+    margin-bottom: 2rem;
+}
+
+.landing-container {
+    max-width: 550px;
+    text-align: center; 
+}
+
+.start-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: #000000;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effects */
+.start-button:hover {
+    background-color: #ffffff;
+    transform: scale(1.1) rotate(-3deg); /* Scale and slightly rotate */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    color: black;
+}
+
+/* Animation Effect (Ripple Inside Button) */
+.start-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: ripple 2s infinite;
+    pointer-events: none;
+}
+
+/* Ripple Keyframes */
+@keyframes ripple {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
+

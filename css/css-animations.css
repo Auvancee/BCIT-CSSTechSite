@@ -1,1 +1,19 @@
 /* Your Custom Code */
+body {
+    color: white;
+}
+
+
+/* code demo for css animation intro*/
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    animation: changeColor 3s infinite;
+  }
+  
+  @keyframes changeColor {
+    0% { background-color: coral; }
+    50% { background-color: yellow; }
+    100% { background-color: coral; }
+  }

@@ -1,1 +1,91 @@
 /* Your Custom Code */
+body {
+    background-color: black;
+    /* font-family: "Lucida Console"; */
+    font-family: "Fira Sans", "Trebuchet MS", Helvetica, Arial, sans-serif;
+    /* without the below line main would not get to 60 rem, was  too narrow */
+    display: block;
+
+}
+
+main {
+    height: auto;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fcff54;
+    margin: 1rem;
+}
+
+p {
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+section {
+    border-top: 2px solid #54fffc;
+
+}
+
+main {
+    max-width: 60rem;
+    background-color: #0502ab;
+    margin: 0 auto;
+}
+
+.square {
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    /* border: 5px solid white; */
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.red {
+    background-color: red;
+    /* transform: skewX(15deg); */
+
+  }
+  
+  .green {
+    background-color: green;
+    /* transform: skewY(15deg); */
+
+  }
+
+  button {
+    padding: 1rem;
+    background-color: #a9abab;
+    color: black;
+    border:none;
+    box-shadow: 0.5rem 0.5rem black;
+    margin: 1rem;
+  }
+
+  button:hover {
+    background-color:#ffff4f;
+    box-shadow: 0.5rem 0.5rem white;
+}
+
+  .translate {
+    transform: translate(120px, -50%); 
+  }
+
+  .skew {
+    transform: skew(15deg, 15deg); 
+  }
+
+  .scale {
+    transform: scale(2, 0.5); 
+  }
+
+  .rotate {
+    transform: rotate(45deg);
+  }
+
+  .matrix {
+    transform: matrix(2, 0, 1, 0.5, 0, 20);
+  }

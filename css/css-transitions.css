@@ -1,11 +1,15 @@
 /* Your Custom Code */
 body{
     color: rgb(255,255,255);
+    background-color: black;
 }
 
 main{
     height: auto;
-    /* margin-left: 1rem; */
+
+    max-width: 62rem;
+    background-color: #0502ab;
+    margin: 0 auto;
 }
 
 
@@ -36,9 +40,7 @@ main{
   transition: width 2s ease-in-out;
 }
 
-.timing-container{
-  /* width: 25rem; */
-}
+
 .timing-container:hover .ease,
 .timing-container:hover .linear,
 .timing-container:hover .ease-in,
@@ -141,7 +143,7 @@ main{
 }
 
 /* more resources */
-a {
+article a {
     flex: 1;
     background-color: #3498db;
     color: #fff;
@@ -152,8 +154,8 @@ a {
     transition: all 0.5s ease-out;
   }
   
-  a:hover,
-  a:focus {
+  article a:hover,
+  article a:focus {
     background-color: #e74c3c;
     color: #ffffff;
   }

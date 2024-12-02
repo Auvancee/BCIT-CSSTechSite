@@ -1,17 +1,12 @@
 /* Your Custom Code */
 body {
     background-color: black;
-    /* font-family: "Lucida Console"; */
     font-family: "Fira Sans", "Trebuchet MS", Helvetica, Arial, sans-serif;
     /* without the below line main would not get to 60 rem, was  too narrow */
     display: block;
 
 }
 
-main {
-    height: auto;
-    padding: 0;
-}
 
 h1, h2, h3, h4, h5, h6 {
     color: #fcff54;
@@ -19,17 +14,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    margin: 1rem;
+    /* margin: 1rem; */
     font-size: 1rem;
 }
 
 section {
     border-top: 2px solid #54fffc;
-    padding: 1.5rem;
+    padding-top: 1.5rem;
 
 }
 
 main {
+    height: auto;
+    padding: 0;
     max-width: 62rem;
     background-color: #0502ab;
     margin: 0 auto;

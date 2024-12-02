@@ -7,10 +7,17 @@ body {
     display: flex;
     flex-direction: column;
     -webkit-font-smoothing: antialiased;
+
+    font-family: "Fira Sans", "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fcff54;
+    /* margin: 1rem; */
 }
 
 main {
-    padding: 0.5rem;
+    padding: 1rem;
     height: 100vh;
     border: 5px double #54fffc;
 }

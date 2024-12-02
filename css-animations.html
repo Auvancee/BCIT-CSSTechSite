@@ -65,16 +65,22 @@
                     <section id="intro">
                         <div class="intro-heading">
                             <h1>Introduction to CSS Animations</h1>
-                            <p>CSS animations allow smooth, visually engaging transitions between styles without JavaScript. 
-                                Keyframes define stages of the animation, specifying how an element’s style changes over time.
-                            </p>
+                            <h2>What are CSS Animations?</h2>
+                            <p>CSS animations allow smooth, visually engaging transitions between styles using Keyframes without the need for JavaScript</p> 
+                            <p> Keyframes define stages of the animation, specifying how an element’s style changes over time.</p>
                         </div>
                         <div class="intro-demo">
+                            <h2>Demo Code 1:</h2>
                             <div class="box"></div>
+                            <p>Here's a box. This box's color changes from coral to yellow then to coral again.
+                                This is set to an infinite loop.
+                            </p>
                         </div>
                     </section>
-                    
-                     <!--Slide 2-->
+
+
+                    <br><br>
+                    <!--Slide 2-->
                     <section id="key-properties">
                         <div class="key-heading">
                             <h2>Key Properties in CSS Animations</h2>
@@ -87,33 +93,50 @@
                         </div>
                         <div class="keyframe-properties">
                             <h2>Using Keyframes</h2>
-                            <p><strong>`from` and `to`:</strong> Simplified keyframe syntax for start and end states.</p>
-                            <p><strong>Percentages:</strong> Define multiple stages (e.g., 0%, 50%, 100%) for complex animations.</p>
+                            <p>Type 1: <strong>`from` and `to`:</strong> Simplified keyframe syntax for start and end states. (respectively)</p>
+                            <p>Type 2: <strong>Percentages:</strong> Define multiple stages (e.g: 0%, 50%, 100%) for complex animations.</p>
                         </div>
                         <div class="key-demo">
+                            <h2>Demo Code 2:</h2>
                             <div class="spin"></div>
+                            <p>Here's a box. This box spins 360 using transformation property, rotate.</p>
+                            <p>Rotates 360 every 2 seconds in an infinite loop using the linear speed property.</p>
                         </div>
                     </section>
             
-                    
-                     <!--Slide 3-->
+
+                    <br><br>
+                    <!--Slide 3-->
                     <section id="advanced-techniques">
                         <div class="advanced-heading">
                             <h2>Advanced Animation Techniques</h2>
                             <p>Using properties like `animation-direction: alternate` and combining transformations for dynamic effects like bouncing.</p>
                         </div>
                         <div class="advanced-demo">
+                            <h2>Demo Code 3:</h2>
                             <div class="bounce"></div>
+                            <p>Here's a box. This box bounces up and down using the transformation property, translateY</p>
+                            <p>Moves up by 50px, returns to its default state, looping over an infinite state.</p>
                         </div>
                     </section>
                     
+
+                    <br><br>
                      <!--Slide 4-->
                     <section id="example">
                         <div class="example-heading">
                             <h2>Practical Example: Animated Button</h2>
-                            <button class="start-button">Start</button>
+                            <p>More complex animations that use Transformation & Transition properties.</p>
                         </div>
-                        
+                        <div class="example-demo">
+                            <h2>Demo Code 4:</h2>
+                            <button class="start-button">Start</button>
+                            <p>Here's A button. It firsts, scales up to 1.1, then shrinks down to its default size. </p>
+                            <p>This process uses the transform property scale() & repeats over 1.8s</p>
+                            <p>Simultaneously, when hovering, the animation stops, and the button shifts from green to orange.</p>
+                            <p>This process uses the transition property & a hover state.</p>
+                        </div>
+
                     </section>
                     
                 </main>

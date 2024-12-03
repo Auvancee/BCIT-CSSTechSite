@@ -24,25 +24,8 @@
     <script src="global.js" defer></script>
 </head>
     <body>
-            <!-- [1] Header & Navigation [DON'T TOUCH] -->
-            <header>
-                <nav>
-                    <p class="logo">CSS-TTA</p>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="css-transitions.html">Transitions</a></li>
-                        <li><a href="css-transformations.html">Transformations</a></li>
-                        <li><a href="css-animations.html">Animations</a></li>
-                    </ul>
+            
 
-
-                    <!-- [1.1] Hamburger Menu [DON'T TOUCH] -->
-                    <svg id="hamburger-menu" class="ham ham3" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
-                        <path class="line top" d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568" />
-                        <path class="line middle" d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7" />
-                        <path class="line bottom" d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0" />
-                    </svg>
-                </nav>
 
                 <!-- [1.2] Overlay (w/ Hamburger Onclick) [DON'T TOUCH] -->
                 <div class="overlay" id="menuOverlay">
@@ -55,25 +38,56 @@
                         </ul>
                     </div>
                 </div>
-            </header>
-
 
                 <!-- [2] Animation Content (Your Content)  -->
                 <main>
+                    
+                    <!-- [1] Header & Navigation [DON'T TOUCH] -->
+                    <header>
+                        <nav>
+                            <p class="logo">CSS-TTA</p>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="css-transitions.html">Transitions</a></li>
+                                <li><a href="css-transformations.html">Transformations</a></li>
+                                <li><a href="css-animations.html">Animations</a></li>
+                            </ul>
+
+
+                            <!-- [1.1] Hamburger Menu [DON'T TOUCH] -->
+                            <svg id="hamburger-menu" class="ham ham3" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+                                <path class="line top" d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568" />
+                                <path class="line middle" d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7" />
+                                <path class="line bottom" d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0" />
+                            </svg>
+                        </nav>
+
+                    
+                    </header>
+
+
+
 
                     <!--Slide 1-->
                     <section id="intro">
                         <div class="intro-heading">
                             <h1>Introduction to CSS Animations</h1>
-                            <h2>What are CSS Animations?</h2>
+                            <h2>◇ What are CSS Animations?</h2>
                             <p>CSS animations allow smooth, visually engaging transitions between styles using Keyframes without the need for JavaScript</p> 
-                            <p> Keyframes define stages of the animation, specifying how an element’s style changes over time.</p>
+                            <p>Keyframes define stages of the animation, specifying how an element’s style changes over time.</p>
+                        </div>
+                        <div class="intro-details">
+                            <h2>◈ Where would I use css animations?</h2>
+                            <p><strong>1. Loading Indicators: </strong>Animated spinners or progress bars to show loading states.</p>
+                            <p><strong>2. Sliders & Carousels: </strong>Animate sliding images or content sections.</p>
+                            <p><strong>3. Scrolling Effects: </strong>Animate elements as users scroll down the page.</p>
+                            <p><strong>4. Notifications: </strong>Fade in/out or slide in alerts and messages.</p>
                         </div>
                         <div class="intro-demo">
-                            <h2>Demo Code 1:</h2>
+                            <h3>◆ Demo Code 1:</h3>
                             <div class="box"></div>
-                            <p>Here's a box. This box's color changes from coral to yellow then to coral again.
-                                This is set to an infinite loop.
+                            <p>Here's a really stretched rectangle. This rectangle color gently transitions from coral to yellow then to coral again.
+                                The color changes over 3 seconds, in an infinite loop. We shall go over this on how we can define animations.
                             </p>
                         </div>
                     </section>
@@ -83,7 +97,7 @@
                     <!--Slide 2-->
                     <section id="key-properties">
                         <div class="key-heading">
-                            <h2>Key Properties in CSS Animations</h2>
+                            <h2>◇ Key Properties in CSS Animations</h2>
                             <ul>
                                 <li><strong>animation-name:</strong> Specifies the keyframes.</li>
                                 <li><strong>animation-duration:</strong> Time for one animation cycle.</li>
@@ -92,15 +106,48 @@
                             </ul>
                         </div>
                         <div class="keyframe-properties">
-                            <h2>Using Keyframes</h2>
+                            <h2>◇ Using Keyframes</h2>
                             <p>Type 1: <strong>`from` and `to`:</strong> Simplified keyframe syntax for start and end states. (respectively)</p>
                             <p>Type 2: <strong>Percentages:</strong> Define multiple stages (e.g: 0%, 50%, 100%) for complex animations.</p>
                         </div>
+                        <div class="key-example-container">
+                            <h2>◈ General Structure of Defining an Animation:</h2>
+                            <div class="key-example-code">
+                                <code>
+                                        @keyframes [animation-name] { <br>
+                                            0% {    
+                                                [any property - (eg: background-color: red)]
+                                            }       <br>
+
+                                            50% {
+                                                [any property - (eg: background-color: blue)]
+                                            }       <br>
+
+                                            100% {
+                                                [any property - (eg: background-color: green)]
+                                            }       <br>
+                                        }
+
+                                        <br><br>
+
+                                        .classname { <br>
+                                            [animation]: [anim-name], [anim-duration], [anim-timing-function], [anim-iteration-count] <br>
+                                        }
+                                    
+                                </code>
+                            </div>
+                        </div>
                         <div class="key-demo">
-                            <h2>Demo Code 2:</h2>
-                            <div class="spin"></div>
-                            <p>Here's a box. This box spins 360 using transformation property, rotate.</p>
-                            <p>Rotates 360 every 2 seconds in an infinite loop using the linear speed property.</p>
+                            <h3>◆ Demo Code 2:</h3>
+                            <div class="key-container">
+                                <div class="spin"></div>
+                                <div class="spin"></div>
+                                <div class="spin"></div>
+                            </div>
+                            <p>Above, are a few boxes. They spin 360 using the transformation property, rotate.
+                                These rotate 360 every 2 seconds, in an infinite loop. Their speed is kept consistent using the
+                                the linear speed property.
+                            </p>
                         </div>
                     </section>
             
@@ -109,14 +156,29 @@
                     <!--Slide 3-->
                     <section id="advanced-techniques">
                         <div class="advanced-heading">
-                            <h2>Advanced Animation Techniques</h2>
+                            <h2>◈ Advanced Animation Techniques</h2>
                             <p>Using properties like `animation-direction: alternate` and combining transformations for dynamic effects like bouncing.</p>
                         </div>
+                        <div class="advanced-details">
+                            <h2>◈ Why use css animations?</h2>
+                            <p><strong>1. Ease of Use: </strong>Simple to implement without the need for Javascript.</p>
+                            <p><strong>2. Responsive: </strong>Easily adapts to different screen sizes and devices.</p>
+                            <p><strong>3. User Experience: </strong>Adds interactivity and visual appeal to web elements.</p>
+                            <p><strong>4. Performance: </strong>They are optimized by browsers for smooth and efficient rendering.</p>
+                        </div>
                         <div class="advanced-demo">
-                            <h2>Demo Code 3:</h2>
-                            <div class="bounce"></div>
-                            <p>Here's a box. This box bounces up and down using the transformation property, translateY</p>
-                            <p>Moves up by 50px, returns to its default state, looping over an infinite state.</p>
+                            <h3>◆ Demo Code 3:</h3>
+                                <div class="advanced-demo-con">
+                                    <div class="bounce"></div>
+                                    <div class="bounce"></div>
+                                    <div class="bounce"></div>
+                                    <div class="bounce"></div>
+                                </div>
+                            <p>Here are a few rectangles. They bounce up and down using the transformation property, translateY.
+                               The Rectangles Move up by 50px, moves back down, returns to its default state & starts doing the 
+                               animation again looping over an infinite state. We use the 'animation-direction' property to prevent 
+                               choppy animations that may appear.
+                            </p>
                         </div>
                     </section>
                     
@@ -125,7 +187,7 @@
                      <!--Slide 4-->
                     <section id="example">
                         <div class="example-heading">
-                            <h2>Practical Example: Animated Button</h2>
+                            <h2>◇ Practical Example: Animated Button</h2>
                             <p>More complex animations that use Transformation & Transition properties.</p>
                         </div>
                         <div class="example-demo">
@@ -138,12 +200,12 @@
                         </div>
 
                     </section>
+
+                    <footer></footer>
                     
                 </main>
 
-            <footer>
-
-            </footer>
+            
 
     </body>
 </html>

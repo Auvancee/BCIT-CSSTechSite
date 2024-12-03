@@ -2,6 +2,7 @@
 body {
   color: white;
   background-color: black;
+  overflow-x: hidden;
 }
 
 
@@ -14,9 +15,10 @@ main {
 
 
 
+
 /* code demo for css animation intro*/
 .box {
-  width: 100px;
+  width: auto;
   height: 100px;
   background-color: coral;
   animation: changeColor 3s infinite;
@@ -37,6 +39,14 @@ main {
 }
 
 /* code demo for css animation keyframes*/
+.key-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
+
 .spin {
   width: 100px;
   height: 100px;
@@ -54,9 +64,24 @@ main {
   }
 }
 
+/* key example */
+.key-example-code {
+  background-color: rgb(49, 82, 134);
+  border-radius: 20px;
+  padding: 20px;
+}
+
 /* code demo for css animation advanced */
+.advanced-demo-con{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
 .bounce {
-  width: 100px;
+  width: 180px;
   height: 100px;
   background-color: lightblue;
   animation: bounce 1s infinite alternate;
@@ -70,6 +95,40 @@ main {
   100% {
     transform: translateY(-20px);
   }
+}
+
+@media (min-width: 40em) {
+  
+  /* code demo for css animation keyframes*/
+  .key-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 20px;
+    justify-items: center
+  }
+
+  .spin {
+    width: 100px;
+    height: 100px;
+  }
+
+
+
+  /* code demo for css animation advanced */
+  .advanced-demo-con{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center
+  }
+
+  .bounce {
+    width: 250px;
+    height: 100px;
+  }
+  
 }
 
 /* code demo for css animation advanced */

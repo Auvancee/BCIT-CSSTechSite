@@ -1,5 +1,21 @@
 /* Don't Touch!  */
+nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #03a8ab;
+    
+    border-radius: 0px;
+    font-size: 20px;
+    text-decoration: none;
 
+    font-family: "Fira Sans", "Trebuchet MS", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+footer {
+    border-radius: 0px;
+}
 
 main{
     height: 90vh;

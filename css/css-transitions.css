@@ -1,42 +1,47 @@
 /* Your Custom Code */
-body{
-    color: rgb(255,255,255);
-    background-color: black;
+body {
+  color: rgb(255, 255, 255);
+  background-color: black;
 }
 
-main{
-    height: auto;
+main {
+  height: auto;
 
-    max-width: 62rem;
-    background-color: #0502ab;
-    margin: 0 auto;
+  max-width: 62rem;
+  background-color: #0502ab;
+  margin: 0 auto;
 }
 
 
 /* Key Properties */
-.ease, .linear, .ease-in, .ease-out, .ease-in-out{
+.ease,
+.linear,
+.ease-in,
+.ease-out,
+.ease-in-out {
   width: 5.5rem;
   height: 6.5rem;
   background-color: red;
   margin-top: 1rem;
 }
 
-.ease{
+.ease {
   transition: width 2s ease;
 }
 
-.linear{
+.linear {
   transition: width 2s linear;
 }
 
-.ease-in{
+.ease-in {
   transition: width 2s ease-in;
 }
-.ease-out{
+
+.ease-out {
   transition: width 2s ease-out;
 }
 
-.ease-in-out{
+.ease-in-out {
   transition: width 2s ease-in-out;
 }
 
@@ -45,29 +50,29 @@ main{
 .timing-container:hover .linear,
 .timing-container:hover .ease-in,
 .timing-container:hover .ease-out,
-.timing-container:hover .ease-in-out{
+.timing-container:hover .ease-in-out {
   /* display: flex;
   justify-content: space-evenly; */
-  width: 17rem; 
+  width: 17rem;
 }
 
 .box-hover-color,
 .box-change-padding,
 .opacity-box {
-    width: 6.5rem;
-    height: 6.5rem;
-    /* margin: 0 auto; */
-    background-color: #3498db;
-    text-align: center;
-    line-height: 6.5rem;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
+  width: 6.5rem;
+  height: 6.5rem;
+  /* margin: 0 auto; */
+  background-color: #3498db;
+  text-align: center;
+  line-height: 6.5rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
 }
 
 /* example 1 */
-.box-hover-color{
-    transition:
+.box-hover-color {
+  transition:
     width 2s,
     height 2s,
     background-color 2s,
@@ -75,54 +80,54 @@ main{
 }
 
 .box-hover-color:hover {
-    width: 12rem;
-    height: 12rem;
-    rotate: 180deg;
-    background-color: #e74c3c;
+  width: 12rem;
+  height: 12rem;
+  rotate: 180deg;
+  background-color: #e74c3c;
 }
 
 /* example 2 */
 .box-change-padding {
-    background-color: #1abc9c;
-    transition: padding 0.5s ease; 
-  }
-  
-  .box-change-padding:hover {
-    padding: 1.25rem;
-  }
-  
+  background-color: #1abc9c;
+  transition: padding 0.5s ease;
+}
+
+.box-change-padding:hover {
+  padding-top: 2rem;
+}
+
 /* Transition */
 /* html {
     height: 100vh;
 } */
-  
+
 /* example 3 */
 .show {
-    font-size: 1.6rem;
-    padding: 20px;
-    border: 3px solid red;
-    border-radius: 20px;
-    width: 480px;
-    margin-top: 1rem;
-    display: none;
-    opacity: 0;
-    transition:
+  font-size: 1.6rem;
+  padding: 20px;
+  border: 3px solid red;
+  border-radius: 20px;
+  width: 480px;
+  margin-top: 1rem;
+  display: none;
+  opacity: 0;
+  transition:
     opacity 5s,
     display 1s allow-discrete;
 }
-  
+
 .showing {
-    opacity: 1;
-    display: block;
-  }
-  
-@starting-style {
-    .showing {
-      opacity: 0;
-    }
+  opacity: 1;
+  display: block;
 }
 
-#btn{
+@starting-style {
+  .showing {
+    opacity: 0;
+  }
+}
+
+#btn {
   width: 6.5rem;
   height: auto;
   padding: 1rem;
@@ -132,30 +137,30 @@ main{
 
 /* example 4 */
 .ball {
-    border-radius: 25px;
-    width: 50px;
-    height: 50px;
-    background: #c00;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 1s;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  background: #c00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s;
 }
 
 /* more resources */
 article a {
-    flex: 1;
-    background-color: #3498db;
-    color: #fff;
-    border: 1px solid;
-    padding: 0.5rem;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.5s ease-out;
-  }
-  
-  article a:hover,
-  article a:focus {
-    background-color: #e74c3c;
-    color: #ffffff;
-  }
+  flex: 1;
+  background-color: #3498db;
+  color: #fff;
+  border: 1px solid;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+article a:hover,
+article a:focus {
+  background-color: #e74c3c;
+  color: #ffffff;
+}

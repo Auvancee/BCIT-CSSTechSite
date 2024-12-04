@@ -33,7 +33,8 @@
 </head>
 
 <body>
-    <!-- [1.2] Overlay (w/ Hamburger Onclick) [DON'T TOUCH] -->
+
+    <!-- [0] Overlay (w/ Hamburger Onclick) [DON'T TOUCH] -->
     <div class="overlay" id="menuOverlay">
         <div class="overlay-content">
             <ul>
@@ -45,10 +46,10 @@
         </div>
     </div>
 
-    <!-- [2] Animation Content (Your Content)  -->
+    
     <main>
         
-        <!-- [1] Header & Navigation [DON'T TOUCH] -->
+        <!-- [0] Header & Navigation [DON'T TOUCH] -->
         <header>
             <nav>
                 <p class="logo">CSS-TTA</p>
@@ -60,7 +61,7 @@
                 </ul>
 
 
-                <!-- [1.1] Hamburger Menu [DON'T TOUCH] -->
+                <!-- [0] Hamburger Menu [DON'T TOUCH] -->
                 <svg id="hamburger-menu" class="ham ham3" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
                     <path class="line top" d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568" />
                     <path class="line middle" d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7" />
@@ -68,56 +69,25 @@
                 </svg>
             </nav>
 
-        
         </header>
 
+        <!-- [1] Transition Content (Your Content)  -->
         <h1>CSS Transition</h1>
         <section class="key-definition">
 
             <article class="definition">
-                <h2>What is a CSS Transition?</h2>
+                <h2>◇ What is a CSS Transition?</h2>
                 <p><strong>Definition:</strong> Enables smooth changes between different states of CSS properties over a
                     defined duration.</p>
                 <p><strong>Shorthand property:</strong> Combines multiple transition-related properties into a single
                     declaration.</p>
-                <h3>What does transition do?</h3>
+                <h2>◈ What does transition do?</h2>
                 <p>CSS transitions provide a way to control animation speed when changing CSS properties. Instead of
                     having property changes take effect immediately, you can cause the changes in a property to take
                     place over a period of time.</p>
-                <h4>Why do you use transition?</h4>
+                <h2>◈ Why do you use transition?</h2>
                 <p>CSS transitions allows you to change property values smoothly, over a given duration.</p>
-                <h5>Where would you use transition?</h5>
-                <p>Transition is mostly apply on interactive elements such as:</p>
-                <ul>
-                    <li>Button</li>
-                    <li>Links</li>
-                    <li>Labels</li>
-                    <li>Selects</li>
-                    <li>Input Types:</li>
-                    <ul>
-                        <li>Button</li>
-                        <li>Radio</li>
-                        <li>Checkbox</li>
-                        <li>Submit</li>
-                        <li>Reset</li>
-                        <li>Range</li>
-                        <li>Image</li>
-                    </ul>
-                </ul>
-            </article>
-            <article class="definition">
-                <h2>What is a CSS Transition?</h2>
-                <p><strong>Definition:</strong> Enables smooth changes between different states of CSS properties over a
-                    defined duration.</p>
-                <p><strong>Shorthand property:</strong> Combines multiple transition-related properties into a single
-                    declaration.</p>
-                <h3>What does transition do?</h3>
-                <p>CSS transitions provide a way to control animation speed when changing CSS properties. Instead of
-                    having property changes take effect immediately, you can cause the changes in a property to take
-                    place over a period of time.</p>
-                <h4>Why do you use transition?</h4>
-                <p>CSS transitions allows you to change property values smoothly, over a given duration.</p>
-                <h5>Where would you use transition?</h5>
+                <h2>◈ Where would you use transition?</h2>
                 <p>Transition is mostly apply on interactive elements such as:</p>
                 <ul>
                     <li>Button</li>
@@ -138,24 +108,7 @@
             </article>
 
             <article class="key-properties">
-                <h2>Key Transition Properties</h2>
-                <p><strong>transition-property:</strong> Specifies the CSS property to transition (e.g., width, color,
-                    opacity).</p>
-                <p><strong>transition-duration:</strong> Sets how long the transition lasts (in seconds or
-                    milliseconds).</p>
-                <p><strong>transition-delay:</strong> Delays the start of the transition.</li>
-                <p><strong>transition-behavior:</strong> pecifies whether transition will be started for properties
-                    whose animation behavior is discrete, keyword values are allow-discrete, normal.</p>
-                <p><strong>transition-timing-function:</strong> Defines the speed curve of the transition:</p>
-                <ol>
-                    <li>ease: Slow start, faster middle, slow end (default).</li>
-                    <li>linear: Constant speed throughout. (not recommend)</li>
-                    <li>ease-in: Slow start.</li>
-                    <li>ease-out: Slow end.</li>
-                    <li>ease-in-out: Slow start and end.</li>
-                </ol>
-            <article class="key-properties">
-                <h2>Key Transition Properties</h2>
+                <h2>◈ Key Transition Properties</h2>
                 <p><strong>transition-property:</strong> Specifies the CSS property to transition (e.g., width, color,
                     opacity).</p>
                 <p><strong>transition-duration:</strong> Sets how long the transition lasts (in seconds or
@@ -179,23 +132,16 @@
                     <div class="ease-out">Ease Out</div>
                     <div class="ease-in-out">Ease In Out</div>
                 </div>
-                <div class="timing-container">
-                    <div class="ease">Ease</div>
-                    <div class="linear">Linear</div>
-                    <div class="ease-in">Ease In</div>
-                    <div class="ease-out">Ease Out</div>
-                    <div class="ease-in-out">Ease In Out</div>
-                </div>
-
             </article>
+
         </section>
         <section class="examples">
             <article class="ex-1">
-                <h2>Change color, width and rotation</h2>
+                <h2>◆ Change color, width and rotation</h2>
                 <div class="box-hover-color">Hover me</div>
             </article>
             <article class="ex-2">
-                <h2>Change padding</h2>
+                <h2>◆ Change padding</h2>
                 <div class="box-change-padding">Hover me</div>
             </article>
             <article class="ex-3">
@@ -232,7 +178,7 @@
                     <code>display: block; opacity: 1</code>. Neat, huh?
                 </div>
             </article>
-            <!-- <article class="ex-4">
+             <article class="ex-4">
                             <p>Click anywhere to move the ball</p>
                             <div id="foo" class="ball"></div>
                         </article> -->
@@ -244,12 +190,6 @@
             <a href="https://www.w3schools.com/css/css3_transitions.asp">W3 schools</a>
         </article>
         </section>
-        <article>
-            <h3>Reference</h3>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions">MDN web
-                docs</a>
-            <a href="https://www.w3schools.com/css/css3_transitions.asp">W3 schools</a>
-        </article>
 
         <br> <br> <br>
 

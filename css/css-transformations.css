@@ -10,11 +10,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: #fcff54;
-    margin: 1rem;
 }
 
 p {
-    /* margin: 1rem; */
+    color: #ffffff;
     font-size: 1rem;
 }
 
@@ -49,14 +48,12 @@ main {
 
 .red {
     background-color: red;
-    /* transform: skewX(15deg); */
     margin-left: 175px;
 
   }
   
   .green {
     background-color: green;
-    /* transform: skewY(15deg); */
 
   }
 
